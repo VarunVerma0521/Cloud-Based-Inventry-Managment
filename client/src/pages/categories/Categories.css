@@ -1,0 +1,98 @@
+.categories-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #667eea;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.category-card p {
+  color: #718096;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+}
+
+.category-meta {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.category-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.category-actions .btn-edit,
+.category-actions .btn-delete {
+  flex: 1;
+  background: none;
+  border: 2px solid #e2e8f0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-actions .btn-edit {
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.category-actions .btn-edit:hover {
+  background: #667eea;
+  color: white;
+}
+
+.category-actions .btn-delete {
+  color: #e53e3e;
+  border-color: #e53e3e;
+}
+
+.category-actions .btn-delete:hover {
+  background: #e53e3e;
+  color: white;
+}
+
+.no-data-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #a0aec0;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,31 @@
+.sales-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.total-price {
+  color: #48bb78;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sale-preview {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.preview-label {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-total {
+  color: #48bb78;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}

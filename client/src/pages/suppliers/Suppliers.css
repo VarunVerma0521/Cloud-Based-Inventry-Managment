@@ -1,0 +1,116 @@
+.suppliers-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.suppliers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.supplier-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #48bb78;
+}
+
+.supplier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.supplier-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.supplier-card h3 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.supplier-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detail-label {
+  color: #718096;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.detail-value {
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.supplier-meta {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.supplier-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.supplier-actions .btn-edit,
+.supplier-actions .btn-delete {
+  flex: 1;
+  background: none;
+  border: 2px solid #e2e8f0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.supplier-actions .btn-edit {
+  color: #48bb78;
+  border-color: #48bb78;
+}
+
+.supplier-actions .btn-edit:hover {
+  background: #48bb78;
+  color: white;
+}
+
+.supplier-actions .btn-delete {
+  color: #e53e3e;
+  border-color: #e53e3e;
+}
+
+.supplier-actions .btn-delete:hover {
+  background: #e53e3e;
+  color: white;
+}
+
+.no-data-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #a0aec0;
+  font-size: 1.1rem;
+}
