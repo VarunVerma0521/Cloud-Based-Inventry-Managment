@@ -156,6 +156,10 @@ function App() {
         <AppContent />
       </AuthProvider>
     </Router>
+    <div>
+      <button onClick={() => auth.signinRedirect()}>Sign in</button>
+      <button onClick={() => signOutRedirect()}>Sign out</button>
+    </div>
   );
 }
 
