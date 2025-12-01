@@ -8,7 +8,7 @@ import './index.css';
 const cognitoAuthConfig = {
   authority: "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_xYpsSXp4d",
   client_id: "3cbm2r8e4a7aheq75p0ncuh79c",
-  redirect_uri: "https://main.d2rbidcpmzqiwc.amplifyapp.com/dashboard",
+  redirect_uri: "https://d84l1y8p4kdic.cloudfront.net",
   response_type: "code",
   scope: "phone openid email",
 };
