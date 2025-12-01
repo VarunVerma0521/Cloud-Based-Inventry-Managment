@@ -125,7 +125,7 @@ function App() {
   const signOutRedirect = () => {
     const clientId = "3cbm2r8e4a7aheq75p0ncuh79c";
     const logoutUri = "<logout uri>";
-    const cognitoDomain = "https://<user pool domain>";
+    const cognitoDomain = "https://ap-south-1xypssxp4d.auth.ap-south-1.amazoncognito.com";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
   };
 
